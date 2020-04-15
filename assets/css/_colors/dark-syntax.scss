@@ -1,0 +1,92 @@
+/*!
+* The syntax dark mode styles.
+* v2.0
+* https://github.com/cotes2020/jekyll-theme-chirpy
+* © 2018-2019 Cotes Chung
+* MIT Licensed
+*/
+
+@mixin dark-syntax {
+  /* syntax highlight colors from https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css */
+  .highlight pre { background-color: #333041; }
+  .highlight .hll { background-color: #333041; }
+  .highlight .c { color: #B7C4CA } /* Comment */
+  .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+  .highlight .k { color: #66d9ef } /* Keyword */
+  .highlight .l { color: #ae81ff } /* Literal */
+  .highlight .n { color: #f8f8f2 } /* Name */
+  .highlight .o { color: #FFC0D7 } /* Operator */
+  .highlight .p { color: #f8f8f2 } /* Punctuation */
+  .highlight .cm { color: #B7C4CA } /* Comment.Multiline */
+  .highlight .cp { color: #B7C4CA } /* Comment.Preproc */
+  .highlight .c1 { color: #B7C4CA } /* Comment.Single */
+  .highlight .cs { color: #B7C4CA } /* Comment.Special */
+  .highlight .ge { font-style: italic } /* Generic.Emph */
+  .highlight .gs { font-weight: bold } /* Generic.Strong */t
+  .highlight .kc { color: #66d9ef } /* Keyword.Constant */
+  .highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+  .highlight .kn { color: #FFC0D7 } /* Keyword.Namespace */
+  .highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+  .highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+  .highlight .kt { color: #66d9ef } /* Keyword.Type */
+  .highlight .ld { color: #1DCCE4 } /* Literal.Date */
+  .highlight .m { color: #ae81ff } /* Literal.Number */
+  .highlight .s { color: #1DCCE4 } /* Literal.String */
+  .highlight .na { color: #CCADFF } /* Name.Attribute */
+  .highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+  .highlight .nc { color: #CCADFF } /* Name.Class */
+  .highlight .no { color: #66d9ef } /* Name.Constant */
+  .highlight .nd { color: #CCADFF } /* Name.Decorator */
+  .highlight .ni { color: #f8f8f2 } /* Name.Entity */
+  .highlight .ne { color: #CCADFF } /* Name.Exception */
+  .highlight .nf { color: #CCADFF } /* Name.Function */
+  .highlight .nl { color: #f8f8f2 } /* Name.Label */
+  .highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+  .highlight .nx { color: #CCADFF } /* Name.Other */
+  .highlight .py { color: #f8f8f2 } /* Name.Property */
+  .highlight .nt { color: #FFC0D7 } /* Name.Tag */
+  .highlight .nv { color: #f8f8f2 } /* Name.Variable */
+  .highlight .ow { color: #FFC0D7 } /* Operator.Word */
+  .highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+  .highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+  .highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+  .highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+  .highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+  .highlight .sb { color: #1DCCE4 } /* Literal.String.Backtick */
+  .highlight .sc { color: #1DCCE4 } /* Literal.String.Char */
+  .highlight .sd { color: #1DCCE4 } /* Literal.String.Doc */
+  .highlight .s2 { color: #1DCCE4 } /* Literal.String.Double */
+  .highlight .se { color: #ae81ff } /* Literal.String.Escape */
+  .highlight .sh { color: #1DCCE4 } /* Literal.String.Heredoc */
+  .highlight .si { color: #1DCCE4 } /* Literal.String.Interpol */
+  .highlight .sx { color: #1DCCE4 } /* Literal.String.Other */
+  .highlight .sr { color: #1DCCE4 } /* Literal.String.Regex */
+  .highlight .s1 { color: #1DCCE4 } /* Literal.String.Single */
+  .highlight .ss { color: #1DCCE4 } /* Literal.String.Symbol */
+  .highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+  .highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+  .highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+  .highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+  .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+  .highlight .gh { } /* Generic Heading & Diff Header */
+  .highlight .gu { color: #B7C4CA; } /* Generic.Subheading & Diff Unified/Comment? */
+  .highlight .gd { color: #FFC0D7; } /* Generic.Deleted & Diff Deleted */
+  .highlight .gi { color: #CCADFF; } /* Generic.Inserted & Diff Inserted */
+  .highlight .go { color: #a0a0a0} /* Generic.Output */
+
+
+  /*-----  My styles ------*/
+
+  --highlight-bg-color: #333041;
+  --highlighter-rouge-color: rgb(255 192 215);
+
+  --highlight-lineno-color: #6c6c6d;
+  --highlight-lineno-border-color: #3c4042;
+
+  .highlight {
+    .gp { color: #cccccc; }
+  }
+  pre { color: #ffffff } /* override Bootstrap */
+  kbd { background-color: black; }
+}

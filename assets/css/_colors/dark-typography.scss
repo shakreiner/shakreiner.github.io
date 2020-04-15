@@ -1,0 +1,131 @@
+/*!
+* The main dark mode styles
+* v2.0
+* https://github.com/cotes2020/jekyll-theme-chirpy
+* © 2018-2019 Cotes Chung
+* MIT Licensed
+*/
+
+@mixin dark-scheme {
+  /* framework */
+  --main-wrapper-bg: rgb(61, 56, 77);
+  --body-bg: var(--main-wrapper-bg);
+  --topbar-wrapper-bg: rgb(68, 63, 87);
+  --search-wrapper-bg: rgb(58, 54, 74);
+  --search-icon-color: rgb(100, 102, 105);
+  --input-focus-border-color: rgb(112, 114, 115);
+  --mask-bg: rgb(68, 69, 70);
+  --footer-bg-color: var(--main-wrapper-bg);
+
+  /* common color */
+  --text-color: rgb(181, 181, 181);
+  --text-muted-color: rgb(107, 116, 124);
+  --link-color: rgb(202,171,252);
+  --link-underline-color: rgb(124, 106, 152);
+  --main-border-color: rgb(76, 71, 97);
+  --button-bg: rgba(0, 0, 0, 0.3);
+  --blockquote-border-color: rgb(135, 135, 135);
+  --blockquote-text-color: rgb(135, 135, 135);
+
+  --btn-border-color: rgb(80, 80 ,80);
+  --btn-backtotop-color: var(--text-color);
+  --btn-backtotop-border-color: var(--btn-border-color);
+  --btn-box-shadow: var(--main-wrapper-bg);
+
+  --card-bg: rgb(54, 51, 68);
+  --card-header-bg: rgb(51, 50, 50);
+  --label-color: rgb(108, 117, 125);
+
+  /* Sidebar */
+  --nav-cursor-color: rgb(183, 182, 182);
+  --sidebar-bg: rgb(76,71,97);
+
+  /* Top Bar */
+  --topbar-text-color: var(--text-color);
+
+  /* Home page */
+  --post-list-text-color: rgb(175, 176, 177);
+  --btn-patinator-text-color: var(--text-color);
+  --btn-active-bg: rgb(76, 71, 97);
+  --btn-active-border-color: rgb(128, 115, 150);
+  --btn-text-color: var(--text-color);
+  --btn-paginator-border-color: var(--btn-border-color);
+  --btn-paginator-shadow: var(--main-wrapper-bg);
+
+  /* Posts */
+  --toc-highlight: rgb(255, 255, 255);
+  // --tag-bg: rgb(41, 40, 40);
+  --tag-hover: rgb(50, 50, 50);
+  --tb-odd-bg: rgba(52, 53, 42, 0.52); /* odd rows of the posts' table */
+  --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
+  --tb-border-color: var(--tb-odd-bg);
+  --footnote-target-bg: rgb(50, 50, 50);
+  --btn-share-color: #6c757d;
+  --btn-share-hover-color: #bfc1ca;
+  --relate-post-date: var(--text-muted-color);
+  --card-border-color: var(--main-wrapper-bg);
+  --card-box-shadow: var(--main-wrapper-bg);
+
+  /* tags */
+  --tag-border: rgb(50, 50, 50);
+  --tag-shadow: rgb(32, 33, 33);
+  --search-tag-bg: var(--tag-bg);
+
+  --dash-color: rgb(63, 65, 68);
+
+  /* categories */
+  --categories-border: rgb(64, 66, 69);
+  --categories-hover-bg: rgb(73, 75, 76);
+
+  /* archives */
+  --timeline-node-bg: rgb(150, 152, 156);
+  --timeline-color: rgb(63, 65, 68);
+  --timeline-year-dot-color: var(--timeline-color);
+
+  /* Footer */
+  --footer-link: rgb(146, 146, 146);
+
+  --about-icons-hover: white;
+
+
+  hr {
+    border-color: var(--main-border-color);
+  }
+
+  /* posts' toc, override BS */
+  nav[data-toggle=toc] .nav-link.active,
+  nav[data-toggle=toc] .nav-link.active:focus,
+  nav[data-toggle=toc] .nav-link.active:hover,
+  nav[data-toggle=toc] .nav>li>a:focus,
+  nav[data-toggle=toc] .nav>li>a:hover {
+    color: var(--toc-highlight)!important;
+    border-left-color: var(--toc-highlight)!important;
+  }
+
+  /* categories */
+  .categories.card,
+  .list-group-item {
+    background-color: var(--card-bg);
+  }
+
+  .categories {
+    .card-header {
+      background-color: var(--card-header-bg);
+    }
+    .list-group-item {
+      border-left: none;
+      border-right: none;
+      padding-left: 2rem;
+      border-color: var(--categories-border);
+      &:last-child {
+        border-bottom-color: var(--card-bg);
+      }
+    }
+  }
+
+  #archives li:nth-child(odd) {
+    background-image: linear-gradient(to left,
+     #3d384d, #433E56, #433E56, #433E56, #3d384d);
+  }
+
+} // dark-scheme

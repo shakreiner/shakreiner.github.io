@@ -1,7 +1,7 @@
 ---
 title: What I've learned solving Flare-On 2019
 description: Lessons learned and tips for CTFs
-date: 2020-04-11 17:45:00 +/-0000
+date: 2020-04-15 16:00:00 +/-0000
 categories: [Write-Ups]
 tags: [flareon, ctf]
 post_image: /assets/img/2020-11-04-flareon-2019-lessons/flare-on-title.png
@@ -9,8 +9,6 @@ image:
   path: /assets/img/2020-11-04-flareon-2019-lessons/preview.png
   height: 628
   width: 1200
-seo:
-  date_modified: 2020-04-14 13:15:07 +0300
 ---
 # Intro
 
